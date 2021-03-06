@@ -121,4 +121,40 @@ print(np.flip(a))
 a = np.arange(4)
 a.flags.writeable=False
 a[1] = 0
-# %%
+# %% How to count the frequency of unique values in NumPy array?
+a = np.array([0, 1, 2, 2, 1, 1])
+print(np.unique(a, return_counts=True))
+# %% Multiply matrices of complex numbers using NumPy in Python
+a = np.array([[2+3j, 4+5j], [4+5j, 6+7j]])
+b = np.array([[8+7j, 5+6j], [9+10j, 1+2j]])
+print(np.vdot(a, b))
+# %% Compute the outer product of two given vectors using NumPy in Python
+a = np.array([1, 1])
+b = np.array([2, 2])
+print(np.outer(a,b))
+# %% Calculate inner, outer, and cross products of matrices and vectors using NumPy
+a = np.array([1, 2, 3])
+b = np.array([1, 1, 1])
+print(np.outer(a,b))
+print(np.inner(a,b))
+print(np.cross(a,b))
+# %% Compute the covariance matrix of two given NumPy arrays
+a = np.array([1, 2, 3])
+b = np.array([1, 1, 1])
+print(np.cov(a, b))
+# %% Convert covariance matrix to correlation matrix using Python
+a = np.array([1, 2, 3])
+b = np.array([1, 1, 1])
+
+covariance = np.cov(a, b)
+v = np.sqrt(np.diag(covariance))
+outer_v = np.outer(v, v)
+correlation = covariance / outer_v
+correlation[covariance == 0] = 0
+
+print(correlation)
+# %% Compute the Kronecker product of two mulitdimension NumPy arrays
+a = np.array([[1, 2], [3, 4]]) 
+b = np.array([[5, 6], [7, 8]]) 
+print(np.kron(a, b))
+# %% 
