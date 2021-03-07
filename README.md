@@ -110,8 +110,6 @@
 - Compute the standard deviation of the NumPy array
 - Compute pearson product-moment correlation coefficients of two given NumPy arrays
 - Calculate the mean across dimension in a 2D NumPy array
-- Calculate the average, variance and standard deviation in Python using NumPy
-- Describe a NumPy Array in Python
 
 # Questions on Polynomial
 - Define a polynomial function
@@ -136,7 +134,6 @@
 - Count the number of substrings in an array
 - Find the lowest index of the substring in an array
 - Get the boolean array when values end with a particular character
-- More Questions on NumPy
 - Different ways to convert a Python dictionary to a NumPy array
 - How to convert a list and tuple into NumPy arrays?
 - Ways to convert array of strings to array of floats
